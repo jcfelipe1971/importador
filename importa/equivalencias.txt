@@ -1,0 +1,37 @@
+# Equivalencias Merge -> MaxFactu que el conversor aplica en el código (origen => destino).
+# Se aplican después de REntorno -> Entorno. Añadid aquí cada cambio de nombre que detectéis al compilar:
+# una línea por equivalencia; lo que va detrás de # es comentario.
+
+Entorno.IdiomaCanal => Entorno.Idioma
+# En Merge Usuario era el código (integer) y UsuarioStr el nombre; en MaxFactu son IdUsuario y Usuario
+Entorno.Usuario => Entorno.IdUsuario
+Entorno.UsuarioStr => Entorno.Usuario
+
+# Datos de REntorno que no existen en TEntorno de MaxFactu (están en UAuxMerge)
+Entorno.DatosAbiertos => EntornoMerge.DatosAbiertos
+Entorno.Delegacion => EntornoMerge.Delegacion
+Entorno.SerieRestringida => EntornoMerge.SerieRestringida
+Entorno.ColorEnlaceActivo => EntornoMerge.ColorEnlaceActivo
+Entorno.ColorCampoID => EntornoMerge.ColorCampoID
+Entorno.ColorEdtFnd => EntornoMerge.ColorEdtFnd
+Entorno.DirectorioComunicaciones => EntornoMerge.DirectorioComunicaciones
+
+# Nivel de acceso del usuario (en Merge lo cargaba LOG_ENTRADAS_VALIDA_SA al entrar)
+Entorno.Nivel => NivelUsuario
+Entorno.Restriccion => NivelUsuario
+
+# En un frame la estructura ya está creada cuando se ejecuta cualquier evento
+EstructuraCreada => True
+
+# Correo SMTP: en Merge estaba en REntorno con otros nombres
+Entorno.Smtp => Entorno.SMTP_Servidor
+Entorno.Port => Entorno.SMTP_Puerto
+Entorno.UserID => Entorno.SMTP_Usuario
+Entorno.Password => Entorno.SMTP_Password
+Entorno.PasswordEnc => Entorno.SMTP_PasswordEnc
+Entorno.Identificacion => Entorno.SMTP_Identificacion
+# Registro de trazas de Merge (DMMain.Log) -> UAuxMerge
+DMMain.Log => LogMerge
+
+# TNsDBGrid / TDBGridFind2000: columna inicial de edición -> columna seleccionada de TDBGrid
+ColumnaInicial => SelectedIndex

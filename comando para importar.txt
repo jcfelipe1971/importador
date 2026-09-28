@@ -1,0 +1,3 @@
+cd C:\Delfos\importador
+set PYTHONUTF8=1
+python merge2m13.py --merge C:\Delfos\Proyectos\Merge --proyecto C:\Delfos\Merge13 --maxfactu C:\Delfos\Proyectos\maxfactu --modulo UFMFamilias --bd localhost:C:\Datos\ARMTEX-DEMO.FDB --bd-usuario SYSDBA --bd-clave masterkey --fbclient "C:\Program Files\Firebird\Firebird_5_0\fbclient.dll" --sin-teechart

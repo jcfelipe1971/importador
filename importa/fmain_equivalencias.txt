@@ -1,0 +1,16 @@
+# Equivalencias FMain (Merge) -> FMMain (MaxFactu). Formato:  miembro_merge => miembro_maxfactu
+# Lo que no aparezca aquí y no exista en TFMMain, el conversor lo añade a UFMMain.pas.
+
+# Indicadores de "abierto desde otra ventana"
+autproveedor => LlamaProveedor
+autcliente => LlamaCliente
+autacreedor => LlamaAcreedor
+autagente => LlamaAgente
+
+# Acciones con otro nombre en MaxFactu
+APedidosProv => APedidosCompraProveedor
+AAlbaranesProv => AAlbaranesCompraProveedor
+AFacturasProv => AFacturasCompraProveedor
+APedidos => APedidosVenta
+AAlbaranes => AAlbaranesVenta
+AFacturas => AFacturasVenta

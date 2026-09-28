@@ -1,0 +1,3 @@
+# Units de Merge que el importador deja en Pendientes (interfaz real, cuerpo vacío) aunque no tengan formulario,
+# porque necesitan una conversión propia. Quitar la línea cuando se conviertan.
+UImagenes     # imágenes en base de datos aparte + hilos de carga
